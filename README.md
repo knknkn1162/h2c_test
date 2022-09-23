@@ -25,3 +25,4 @@ curl --http2-prior-knowledge http://localhost:1010
 
 + https://github.com/thrawn01/h2c-golang-example
 + https://qiita.com/nozmiz/items/3bf03533895251c93af2
++ https://http2.info/faq.html#why-is-http2-binary
