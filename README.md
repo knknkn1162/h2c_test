@@ -2,6 +2,8 @@
 
 For testing http2 on http(Cleartext), h2c not on https(on TLS), h2.
 
+## server
+
 ```sh
 # docker build --rm -t knknkn1162/h2c_test .
 # accept signal
@@ -9,10 +11,14 @@ docker run -it --rm --init -p 8080:1010 knknkn1162/h2c_test
 # stop with Ctrl-C
 ```
 
+## client
+
 ```
-# check with "-v" or "--trace /dev/stdout"
+# check with "-v"
+# or "--trace /dev/stdout"
+# or wireshark app.
 curl http://localhost:8080 --http2
-curl -v --http2-prior-knowledge http://localhost:1010
+curl --http2-prior-knowledge http://localhost:1010
 ```
 
 # link
